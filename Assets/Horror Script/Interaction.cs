@@ -23,6 +23,7 @@ public class Interaction : MonoBehaviour
 
     private void InteractWhenPressed()
     {
+        if(selectedInteractable == null) return;
         selectedInteractable.Interact(ref itemsInPlayerHand);
     }
     private void InteractAltWhenPressed()

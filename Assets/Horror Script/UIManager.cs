@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject instructionText;
     public GameObject canvas;
     public TextMeshProUGUI dialogueText;
+    public GameObject blackImage;
 
     private Animator canvasAnimator;
 
@@ -23,6 +24,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         canvasAnimator.SetTrigger("start");
+        Invoke(nameof(SetImageActiveFalse), 2f);
     }
 
 
@@ -36,5 +38,10 @@ public class UIManager : MonoBehaviour
             alpha
         );
 
+    }
+
+    private void SetImageActiveFalse()
+    {
+        blackImage.SetActive(false);
     }
 }
