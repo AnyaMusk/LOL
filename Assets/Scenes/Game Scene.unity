@@ -2240,6 +2240,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1585863721659385739, guid: b55116db60050c748920d162409ef97d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1716530380746965585, guid: b55116db60050c748920d162409ef97d,
         type: 3}
       propertyPath: playerCamera
@@ -2702,6 +2707,14 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 2074406272}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 8347017054315156463, guid: bc8ffc0f569fdfb46ab4b0540c352b6a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2847,7 +2860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: blackImage
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 257949687}
+=======
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 9118244008571861125, guid: 8edd67446d3d09742a1d7dc0926ea8be,
         type: 3}
       propertyPath: dialogueText
