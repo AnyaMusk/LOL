@@ -23,10 +23,15 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+<<<<<<< Updated upstream
         
         blackImage.SetActive(true);
         canvasAnimator.SetTrigger("start");
         Invoke(nameof(SetImageActiveFalse), 2f);
+=======
+       /* canvasAnimator.SetTrigger("start");
+        Invoke(nameof(SetImageActiveFalse), 2f);*/
+>>>>>>> Stashed changes
     }
 
 
