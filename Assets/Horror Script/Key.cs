@@ -46,6 +46,7 @@ public class Key : Items
         transform.localRotation = Quaternion.identity;
 
         rb.isKinematic = true;
+        rb.interpolation = RigidbodyInterpolation.None;
     }
 
     public override void Use()
@@ -58,6 +59,7 @@ public class Key : Items
         usableItem = null;
         transform.SetParent(null);
         rb.isKinematic = false;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
     
     public enum KeyType
