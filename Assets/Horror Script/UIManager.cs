@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        
+        blackImage.SetActive(true);
         canvasAnimator.SetTrigger("start");
         Invoke(nameof(SetImageActiveFalse), 2f);
     }

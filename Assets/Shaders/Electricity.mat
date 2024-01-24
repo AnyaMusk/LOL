@@ -51,12 +51,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElecticityAmount: 2
-    - _ElecticityScale: 20
+    - _ELectricityThickness: 4.5
+    - _ElecticityAmount: 3
+    - _ElecticityScale: 50
+    - _MaskFade: 3.72
+    - _MaskScale: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Color: {r: 2, g: 2, b: 2, a: 0}
-    - _ElecticitySpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 3.9999998, g: 3.9999998, b: 3.9999998, a: 0}
+    - _ElecticitySpeed: {r: 0.2, g: 0.5, b: 0, a: 0}
     - _NoiseSpeed: {r: 0.1, g: -0.5, b: 0, a: 0}
+    - _Tiling: {r: 0.42, g: 1.73, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -33,7 +33,7 @@ public class Key : Items
         UIManager.Instance.instructionText.SetActive(isVisible);
         if (UIManager.Instance.instructionText.activeInHierarchy)
         {
-            UIManager.Instance.instructionText.GetComponent<TextMeshProUGUI>().text = "[F] \n Pick/Drop";
+            UIManager.Instance.instructionText.GetComponent<TextMeshProUGUI>().text = $"[F] \n {keyType}";
         }
     }
 
