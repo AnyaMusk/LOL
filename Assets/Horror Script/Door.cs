@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class Door : Interactable
 {
-    private Animator animator;
+    [SerializeField] Animator animator;
     private bool isOpen;
     private static readonly int Open = Animator.StringToHash("open");
     private AudioSource audioSource;
@@ -22,7 +22,7 @@ public class Door : Interactable
     {
         isLocked = true;
         isOpen = false;
-        animator = GetComponent<Animator>();
+        
         audioSource = GetComponent<AudioSource>();
     }
 
