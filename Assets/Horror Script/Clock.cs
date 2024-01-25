@@ -24,7 +24,7 @@ public class Clock : Interactable
         rb.isKinematic = false;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
 
-        Invoke(nameof(BreakClock), 0.83f);
+        Invoke(nameof(BreakClock), 1f);
     }
 
     public override void InteractAlternate(ref Items itemsInPlayerHand, ref Interactable interactableInHand)

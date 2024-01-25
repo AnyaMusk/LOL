@@ -11,12 +11,11 @@ public class Stool : Items
     [SerializeField] private Transform parentOfItem;
     [SerializeField] private Transform placeStoolTransform;
     [SerializeField] private BoxCollider boxTriggerCollider;
-    private BoxCollider boxCollider;
+    [SerializeField]private BoxCollider boxCollider;
 
     public override void Start()
     {
-        boxCollider = GetComponent<BoxCollider>();
-        boxTriggerCollider = GetComponent<BoxCollider>();
+
     }
 
     public override void Interact(ref Items itemsInPlayerHand)

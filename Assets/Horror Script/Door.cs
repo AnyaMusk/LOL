@@ -76,12 +76,14 @@ public class Door : Interactable
             else
             {
                 // door locked text
+                if(typeOfKeyRequired == Key.KeyType.None) return;
                 UIManager.Instance.DialogueTextManipulation($"{typeOfKeyRequired} is needed to unlock");
 
             }
         }
         else
         {
+            if(typeOfKeyRequired == Key.KeyType.None) return;
             UIManager.Instance.DialogueTextManipulation($"{typeOfKeyRequired} is needed to unlock");
         }
     }
