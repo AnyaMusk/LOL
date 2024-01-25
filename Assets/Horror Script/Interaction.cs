@@ -10,6 +10,7 @@ public class Interaction : MonoBehaviour
     [SerializeField] private float interactionMaxDis = 5f;
     [SerializeField] private int interactibleLayerMask;
     [SerializeField] private int interactibleKeyLayerMask;
+    [SerializeField] private int interactibleObjectMask;
 
     private Interactable selectedInteractable; // item were looking at
     private Interactable usableItem; // item in inventory
@@ -51,10 +52,10 @@ public class Interaction : MonoBehaviour
 
     private void GetTheObjectInFront()
     {
-        
+        Debug.Log("itemsInPlayerHand  " + itemsInPlayerHand +"          "+  "usableItem  " + usableItem + "   " + "selected  " + selectedInteractable);
         Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
         Debug.DrawRay(cameraTransform.position, cameraTransform.forward * interactionMaxDis);
-        if (Physics.Raycast(ray, out RaycastHit hit,interactionMaxDis, (1 << interactibleLayerMask) | (1 << interactibleKeyLayerMask)))
+        if (Physics.Raycast(ray, out RaycastHit hit,interactionMaxDis, (1 << interactibleLayerMask) | (1 << interactibleKeyLayerMask) | (1 << interactibleObjectMask)))
         {
             if (hit.transform.TryGetComponent(out Interactable interactable))
             {
@@ -74,12 +75,14 @@ public class Interaction : MonoBehaviour
             else
             {
                 if(selectedInteractable != null) selectedInteractable.VisibleUI(false);
+                selectedInteractable = null;
                 usableItem = null;
             }
         }
         else
         {
             if(selectedInteractable != null) selectedInteractable.VisibleUI(false);
+            selectedInteractable = null;
             usableItem = null;
         }
        

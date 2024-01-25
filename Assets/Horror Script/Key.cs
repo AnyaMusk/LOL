@@ -66,6 +66,11 @@ public class Key : Items
     {
         MasterKey,
         BedroomKey,
+        Batteries,
+        ScrewDriver,
+        Knife,
+        Fish,
+        Bulb,
         None,
     }
 }

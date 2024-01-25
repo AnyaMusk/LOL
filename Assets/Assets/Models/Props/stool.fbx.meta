@@ -3,7 +3,12 @@ guid: a0b9de833ca146e4d9e244a269e8e5a5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stool
+    second: {fileID: 2100000, guid: 1f7a995f0f5552545a99b69ac69348da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

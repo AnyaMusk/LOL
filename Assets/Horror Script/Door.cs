@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 
 public class Door : Interactable
 {
-    
     private Animator animator;
     private bool isOpen;
     private static readonly int Open = Animator.StringToHash("open");
@@ -69,7 +68,7 @@ public class Door : Interactable
             if ((items as Key).keyType == typeOfKeyRequired)
             {
                 isLocked = false;
-                // unlock anim
+                // unlock anim or any animation and then destroy it
                 Destroy(items.gameObject);
                 // door Unlocked text
                 UIManager.Instance.DialogueTextManipulation($"unlocked");
