@@ -54,7 +54,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!114 &332187641693154172
 MonoBehaviour:
@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 55175facda70859468a8baf91caef69b,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
