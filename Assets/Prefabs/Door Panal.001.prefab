@@ -26,14 +26,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833299619593366925}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 48.84, y: -0.03, z: 45.589}
-  m_LocalScale: {x: -129.08145, y: -122.7049, z: 112.41348}
+  m_LocalScale: {x: 125.999115, y: 122.7049, z: 112.41348}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3500234549007949188}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6340959575011453588
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 1125527394799399740}
   - component: {fileID: 7024444694865323006}
   - component: {fileID: 4848489305920643665}
-  - component: {fileID: 5094460502179627393}
+  - component: {fileID: 6800225124542689180}
   - component: {fileID: 3789577375935781090}
   m_Layer: 10
   m_Name: Door .002
@@ -215,10 +215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 321377248920415161}
-  typeOfKeyRequired: 8
+  typeOfKeyRequired: 7
   audioClips:
   - {fileID: 8300000, guid: 219e35fe00c3dda4398171d2090800d8, type: 3}
---- !u!65 &5094460502179627393
+--- !u!65 &6800225124542689180
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,7 +238,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.021490507, y: 0.0051770466, z: 0.0541141}
-  m_Center: {x: -0.010735517, y: 0, z: 0.022609992}
+  m_Center: {x: -0.010735517, y: -0.0012199198, z: 0.022609992}
 --- !u!82 &3789577375935781090
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6,16 +6,13 @@ using UnityEngine;
 public class Clock : Interactable
 {
     [SerializeField] private GameObject batteries;
-    [SerializeField] private AudioClip audioClip;
     private Rigidbody rb;
     private BoxCollider boxCollider;
-    private AudioSource audioSource;
 
     private bool isBroken;
     public override void Start()
     {
         rb = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();        
         batteries.SetActive(false);
         isBroken = false;
         rb.isKinematic = true;
@@ -27,7 +24,7 @@ public class Clock : Interactable
         rb.isKinematic = false;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
 
-        Invoke(nameof(BreakClock), 1.05f);
+        Invoke(nameof(BreakClock), 1f);
     }
 
     public override void InteractAlternate(ref Items itemsInPlayerHand, ref Interactable interactableInHand)
@@ -55,6 +52,5 @@ public class Clock : Interactable
     {
         isBroken = true;
         batteries.SetActive(true);
-        audioSource.PlayOneShot(audioClip);
     }
 }
