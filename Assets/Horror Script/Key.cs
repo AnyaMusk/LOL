@@ -14,10 +14,6 @@ public class Key : Items
     public override void Start()
     {
         rb = GetComponent<Rigidbody>();
-        if (keyType == KeyType.Antenna)
-        {
-            rb.isKinematic = true;
-        }
     }
 
     public override void Interact(ref Items items)
@@ -75,7 +71,6 @@ public class Key : Items
         Knife,
         Fish,
         Bulb,
-        Antenna,
         None,
     }
 }

@@ -52,7 +52,7 @@ public class Interaction : MonoBehaviour
 
     private void GetTheObjectInFront()
     {
-        //Debug.Log("itemsInPlayerHand  " + itemsInPlayerHand +"          "+  "usableItem  " + usableItem + "   " + "selected  " + selectedInteractable);
+        Debug.Log("itemsInPlayerHand  " + itemsInPlayerHand +"          "+  "usableItem  " + usableItem + "   " + "selected  " + selectedInteractable);
         Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
         Debug.DrawRay(cameraTransform.position, cameraTransform.forward * interactionMaxDis);
         if (Physics.Raycast(ray, out RaycastHit hit,interactionMaxDis, (1 << interactibleLayerMask) | (1 << interactibleKeyLayerMask) | (1 << interactibleObjectMask)))

@@ -62,11 +62,7 @@ public class Door : Interactable
 
     public void CheckPlayerHandForItem(Items items)
     {
-        if (typeOfKeyRequired == Key.KeyType.None)
-        {
-            isLocked = false;
-            return;
-        }
+        if (typeOfKeyRequired == Key.KeyType.None) isLocked = false;
         if (items is Key)
         {
             if ((items as Key).keyType == typeOfKeyRequired)
